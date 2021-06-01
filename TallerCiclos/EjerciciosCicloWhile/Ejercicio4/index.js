@@ -3,9 +3,9 @@
 */
 
 let enterN = parseInt(prompt("Ingrese n"));
-showMultiplyTable(enterN);
+showOddNumbers(enterN);
 
-function showMultiplyTable (n){
+function showOddNumbers (n){
     let count = 0;
     while(count < n){
         if (count % 2 != 0) {
