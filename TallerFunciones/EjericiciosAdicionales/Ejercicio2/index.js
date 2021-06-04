@@ -5,12 +5,19 @@
 let enterA = parseInt(prompt("ingrese el valor para a "));
 let enterB = parseInt(prompt("ingrese el valor para b "));
 
-showBiggerNumber(enterA, enterB);
+let biggerNumber =  showBiggerNumber(enterA, enterB);
+
+console.log(biggerNumber);
 
 function showBiggerNumber(a, b){
-    console.log(`Números entre ${a} y ${b}`);   
-    for (let index = a; index <= b ; index++) {
-        console.log(`${index}`);
+    console.log(`Números entre ${a} y ${b}`); 
+    let numMayor = a;
+    while (a <= b){
+        if(a > numMayor){
+            numMayor = a;
+        }
+        console.log("numero: ", a);
+        a++;
     }
-    console.log(`El numero mayor es: ${b}`);
+    return numMayor;
 }
